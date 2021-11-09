@@ -34,7 +34,6 @@ const init = function () {
 };
 
 init();
-
 const switchPlayer = function () {
   currentScore = 0;
   document.getElementById(`current--${activePlayer}`).textContent = 0;
@@ -51,7 +50,7 @@ btnRoll.addEventListener('click', function () {
 
     // 2. Display dace
     diceEl.classList.remove('hidden');
-    diceEl.src = `dice-${dice}.png`;
+    diceEl.src = `./img/dice-${dice}.png`;
 
     // 3. Check for rolled 1: if true, switch to next player
     if (dice !== 1) {
